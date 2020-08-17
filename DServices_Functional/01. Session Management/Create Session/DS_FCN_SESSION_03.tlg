@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<test_case>
+<id>DS_FCN_SESSION_03</id>
+<test_title>Lifetime session, min value</test_title>
+<test_duration>00:00</test_duration>
+<test_type>[None Selected]</test_type>
+<test_phase>[None Selected]</test_phase>
+<create_date>20151015</create_date>
+<create_time>16:07:07</create_time>
+<update_date>20151215</update_date>
+<update_time>14:01:38</update_time>
+<create_user_id>OmyotovA</create_user_id>
+<update_user_id>ShibalovA</update_user_id>
+<rec_test_configs></rec_test_configs>
+<test_resources></test_resources>
+<prerequisites></prerequisites>
+<test_description><![CDATA[1.	Set SESSION_TIMEOUT key 0(0 sec.) in  system.cfg <br>2.	Launch D-Services.<br>3.	Create session<br>4.   Ping session GET /sessions/(session) ]]></test_description>
+<test_result><![CDATA[1.	Successful create Session <br>Status Code: 200 OK<br>{<br>    "session": "123"<br>}<br>1.	Ping failed. Session closed.<br>Status Code: 400 Bad Request]]></test_result>
+<notes1></notes1>
+<notes2></notes2>
+<external_link></external_link>
+<priority>2</priority>
+<requirement></requirement>
+</test_case>

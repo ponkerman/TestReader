@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<test_case>
+<id>DS_FCN_SESSION_02</id>
+<test_title>Create Session, incorrect authentication information.</test_title>
+<test_duration>00:00</test_duration>
+<test_type>[None Selected]</test_type>
+<test_phase>[None Selected]</test_phase>
+<create_date>20151015</create_date>
+<create_time>16:05:59</create_time>
+<update_date>20151215</update_date>
+<update_time>14:01:33</update_time>
+<create_user_id>OmyotovA</create_user_id>
+<update_user_id>ShibalovA</update_user_id>
+<rec_test_configs></rec_test_configs>
+<test_resources></test_resources>
+<prerequisites></prerequisites>
+<test_description><![CDATA[1. Repeat steps from test DS_FCN_SESSION_01. For authorization using login and password that are not represented in the password.tbl ]]></test_description>
+<test_result><![CDATA[1. Session was not create. From server receive http response:<br><br>404 Not Found<br>{<br>    "parameter": "Wrong login info"<br>}]]></test_result>
+<notes1></notes1>
+<notes2></notes2>
+<external_link></external_link>
+<priority>2</priority>
+<requirement></requirement>
+</test_case>

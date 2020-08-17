@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<test_case>
+<id>DS_FCN_SESSION_01</id>
+<test_title>Create Session, correct authentication information.</test_title>
+<test_duration>00:00</test_duration>
+<test_type>[None Selected]</test_type>
+<test_phase>[None Selected]</test_phase>
+<create_date>20151015</create_date>
+<create_time>16:02:59</create_time>
+<update_date>20170327</update_date>
+<update_time>17:30:34</update_time>
+<create_user_id>OmyotovA</create_user_id>
+<update_user_id>Markin</update_user_id>
+<rec_test_configs></rec_test_configs>
+<test_resources></test_resources>
+<prerequisites><![CDATA[1. D-Services configured and launch. Succesful connected to D-Mas server]]></prerequisites>
+<test_description><![CDATA[1. Login to services. Use command: <br>POST /sessions?user%20name=(name)&password=(password)<br>(user name and password take from d-mas config(password.tbl))<br><br>POST http://localhost:60000/test/sessions?user%20name=&password=]]></test_description>
+<test_result><![CDATA[1. Session was create. From server receive http response:<br>Status Code: 200 OK<br>{<br>    "session": "123"<br>}<br>Session id (session token) is a random integer. In a set of sessions existing simultaneously on a server, their ids are guaranteed to be unique. Collision probability between ids of sessions associated with different servers, or sessions whose lifetimes do not intersect, is expected to be reasonably small.]]></test_result>
+<notes1><![CDATA[Send following set of parameters:<br>{"properties": {<br>"interface": [1, 0],<br>"protocol": [1, 0],<br>"idle time": "P0DT0H8M0S",<br>"safety window": "P0DT0H8M0S",<br>"as-run log window": "10",<br>"block size": 0,<br>"schedule window": "20" <br>}}]]></notes1>
+<notes2><![CDATA[The response:<br>{<br>"session": "1052604289",<br>"properties": {<br>"interface": [<br>"1",<br>"0" <br>],<br>"protocol": [<br>"1",<br>"0" <br>],<br>"idle time": "P0DT0H0M9S",<br>"as-run log window": "10",<br>"schedule window": "20",<br>"safety window": "P0DT0H0M0S",<br>"block size": "0" <br>}<br>}]]></notes2>
+<external_link></external_link>
+<priority>2</priority>
+<requirement></requirement>
+</test_case>

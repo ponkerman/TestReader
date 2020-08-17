@@ -51,6 +51,9 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>bin\Debug\lib\System.Data.SQLite.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -62,6 +65,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Base.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +87,84 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="DServices_Functional\.vs\ProjectSettings.json" />
+    <None Include="DServices_Functional\.vs\slnx.sqlite" />
+    <None Include="DServices_Functional\.vs\VSWorkspaceState.json" />
+    <None Include="DServices_Functional\01. Session Management.tgp" />
+    <None Include="DServices_Functional\01. Session Management\Create Session.tgp" />
+    <None Include="DServices_Functional\01. Session Management\Create Session\DS_FCN_SESSION_01.tlg" />
+    <None Include="DServices_Functional\01. Session Management\Create Session\DS_FCN_SESSION_02.tlg" />
+    <None Include="DServices_Functional\01. Session Management\Create Session\DS_FCN_SESSION_03.tlg" />
+    <None Include="DServices_Functional\01. Session Management\Create Session\DS_FCN_SESSION_04.tlg" />
+    <None Include="DServices_Functional\01. Session Management\Create Session\DS_FCN_SESSION_05.tlg" />
+    <None Include="DServices_Functional\01. Session Management\Destroy Session.tgp" />
+    <None Include="DServices_Functional\01. Session Management\Destroy Session\DS_FCN_SESSION_06.tlg" />
+    <None Include="DServices_Functional\01. Session Management\Destroy Session\DS_FCN_SESSION_07.tlg" />
+    <None Include="DServices_Functional\01. Session Management\Destroy Session\DS_FCN_SESSION_08.tlg" />
+    <None Include="DServices_Functional\01. Session Management\Destroy Session\DS_FCN_SESSION_13.tlg" />
+    <None Include="DServices_Functional\01. Session Management\Destroy Session\DS_FCN_SESSION_14.tlg" />
+    <None Include="DServices_Functional\01. Session Management\Ping Session.tgp" />
+    <None Include="DServices_Functional\01. Session Management\Ping Session\DS_FCN_SESSION_09.tlg" />
+    <None Include="DServices_Functional\01. Session Management\Ping Session\DS_FCN_SESSION_10.tlg" />
+    <None Include="DServices_Functional\01. Session Management\Ping Session\DS_FCN_SESSION_11.tlg" />
+    <None Include="DServices_Functional\01. Session Management\Ping Session\DS_FCN_SESSION_12.tlg" />
+    <None Include="DServices_Functional\01. Session Management\Unsubscribe.tgp" />
+    <None Include="DServices_Functional\01. Session Management\Unsubscribe\DS_FCN_UNSUB_01.tlg" />
+    <None Include="DServices_Functional\01. Session Management\Unsubscribe\DS_FCN_UNSUB_02.tlg" />
+    <None Include="DServices_Functional\01. Session Management\Unsubscribe\DS_FCN_UNSUB_03.tlg" />
+    <None Include="DServices_Functional\01. Session Management\Unsubscribe\DS_FCN_UNSUB_04.tlg" />
+    <None Include="DServices_Functional\01. Session Management\Unsubscribe\DS_FCN_UNSUB_05.tlg" />
+    <None Include="DServices_Functional\01. Session Management\Unsubscribe\DS_FCN_UNSUB_06.tlg" />
+    <None Include="DServices_Functional\02. Server Management.tgp" />
+    <None Include="DServices_Functional\02. Server Management\Get Server Status.tgp" />
+    <None Include="DServices_Functional\02. Server Management\Get Server Status\FUN_SVRMT_GSS_001.tlg" />
+    <None Include="DServices_Functional\02. Server Management\Get Server Status\FUN_SVRMT_GSS_002.tlg" />
+    <None Include="DServices_Functional\02. Server Management\Get Server Status\FUN_SVRMT_GSS_003.tlg" />
+    <None Include="DServices_Functional\02. Server Management\Get Server Status\FUN_SVRMT_GSS_004.tlg" />
+    <None Include="DServices_Functional\02. Server Management\Get Server Time.tgp" />
+    <None Include="DServices_Functional\02. Server Management\Get Server Time\FUN_SVRMT_GST_001.tlg" />
+    <None Include="DServices_Functional\02. Server Management\Get Server Time\FUN_SVRMT_GST_002.tlg" />
+    <None Include="DServices_Functional\02. Server Management\Get Server Time\FUN_SVRMT_GST_003.tlg" />
+    <None Include="DServices_Functional\02. Server Management\Get Server Time\FUN_SVRMT_GST_004.tlg" />
+    <None Include="DServices_Functional\02. Server Management\Perform TOC.tgp" />
+    <None Include="DServices_Functional\03. Alarm Managment.tgp" />
+    <None Include="DServices_Functional\03. Alarm Managment\Get Alarm Metadata.tgp" />
+    <None Include="DServices_Functional\03. Alarm Managment\Get Alarms.tgp" />
+    <None Include="DServices_Functional\04. Drvice Managment.tgp" />
+    <None Include="DServices_Functional\04. Drvice Managment\Device Control.tgp" />
+    <None Include="DServices_Functional\04. Drvice Managment\Get Device List.tgp" />
+    <None Include="DServices_Functional\04. Drvice Managment\Get Device Status.tgp" />
+    <None Include="DServices_Functional\05. Buses.tgp" />
+    <None Include="DServices_Functional\05. Buses\Get Bus Configurations.tgp" />
+    <None Include="DServices_Functional\05. Buses\Get Bus Configurations\DS_FCN_BUSCFG_01.tlg" />
+    <None Include="DServices_Functional\05. Buses\Get Bus Configurations\DS_FCN_BUSCFG_02.tlg" />
+    <None Include="DServices_Functional\05. Buses\Get Bus Configurations\DS_FCN_BUSCFG_03.tlg" />
+    <None Include="DServices_Functional\05. Buses\Get Bus Configurations\DS_FCN_BUSCFG_04.tlg" />
+    <None Include="DServices_Functional\05. Buses\Get Bus Configurations\DS_FCN_BUSCFG_05.tlg" />
+    <None Include="DServices_Functional\05. Buses\Get Bus Configurations\DS_FCN_BUSCFG_06.tlg" />
+    <None Include="DServices_Functional\05. Buses\Get Bus Status.tgp" />
+    <None Include="DServices_Functional\05. Buses\Get Bus Status\DS_FCN_BUSST_01.tlg" />
+    <None Include="DServices_Functional\05. Buses\Get Bus Status\DS_FCN_BUSST_02.tlg" />
+    <None Include="DServices_Functional\05. Buses\Get Bus Status\DS_FCN_BUSST_03.tlg" />
+    <None Include="DServices_Functional\05. Buses\Get Bus Status\DS_FCN_BUSST_04.tlg" />
+    <None Include="DServices_Functional\05. Buses\Get Bus Status\DS_FCN_BUSST_05.tlg" />
+    <None Include="DServices_Functional\05. Buses\Get Bus Status\DS_FCN_BUSST_06.tlg" />
+    <None Include="DServices_Functional\05. Buses\Get Buses.tgp" />
+    <None Include="DServices_Functional\05. Buses\Get Buses\DS_FCN_GETBUS_01.tlg" />
+    <None Include="DServices_Functional\05. Buses\Get Buses\DS_FCN_GETBUS_02.tlg" />
+    <None Include="DServices_Functional\05. Buses\Get Buses\DS_FCN_GETBUS_03.tlg" />
+    <None Include="DServices_Functional\05. Buses\Get Buses\DS_FCN_GETBUS_04.tlg" />
+    <None Include="DServices_Functional\06. Bus Controls.tgp" />
+    <None Include="DServices_Functional\06. Bus Controls\DS_FCN_BUSCTRL_08.tlg" />
+    <None Include="DServices_Functional\06. Bus Controls\DS_FCN_BUSCTRL_09.tlg" />
+    <None Include="DServices_Functional\06. Bus Controls\DS_FCN_BUSCTRL_10.tlg" />
+    <None Include="DServices_Functional\06. Bus Controls\DS_FCN_BUSCTRL_11.tlg" />
+    <None Include="DServices_Functional\06. Bus Controls\DS_FCN_BUSCTRL_12.tlg" />
+    <None Include="DServices_Functional\06. Bus Controls\DS_FCN_BUSCTRL_13.tlg" />
+    <None Include="DServices_Functional\06. Bus Controls\DS_FCN_BUSCTRL_14.tlg" />
+    <None Include="DServices_Functional\06. Bus Controls\DS_FCN_BUSCTRL_15.tlg" />
+    <None Include="DServices_Functional\06. Bus Controls\DS_FCN_BUSCTRL_16.tlg" />
+    <None Include="DServices_Functional\06. Bus Controls\Query.tgp" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -107,6 +189,16 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DServices_Functional\.vs\DServices_Functional\v16\" />
+    <Folder Include="DServices_Functional\02. Server Management\Perform TOC\" />
+    <Folder Include="DServices_Functional\03. Alarm Managment\Get Alarm Metadata\" />
+    <Folder Include="DServices_Functional\03. Alarm Managment\Get Alarms\" />
+    <Folder Include="DServices_Functional\04. Drvice Managment\Device Control\" />
+    <Folder Include="DServices_Functional\04. Drvice Managment\Get Device List\" />
+    <Folder Include="DServices_Functional\04. Drvice Managment\Get Device Status\" />
+    <Folder Include="DServices_Functional\06. Bus Controls\Query\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

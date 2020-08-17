@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<test_case>
+<id>DS_FCN_GETBUS_01</id>
+<test_title>Get Buses, valid session id</test_title>
+<test_duration>00:00</test_duration>
+<test_type>[None Selected]</test_type>
+<test_phase>[None Selected]</test_phase>
+<create_date>20151016</create_date>
+<create_time>08:29:36</create_time>
+<update_date>20151215</update_date>
+<update_time>14:02:07</update_time>
+<create_user_id>OmyotovA</create_user_id>
+<update_user_id>ShibalovA</update_user_id>
+<rec_test_configs></rec_test_configs>
+<test_resources></test_resources>
+<prerequisites></prerequisites>
+<test_description><![CDATA[1. Create session<br>2. Send request GET /buses?session=(session)<br><br>GET http://localhost:60000/test/buses?session=1207051392]]></test_description>
+<test_result><![CDATA[1. Request list of buses supported by DMAS. IDs started from zero.<br>Status Code: 200 OK<br>    {<br>        "buses":<br>        [<br>            "0",<br>            "1",<br>            "2",<br>            "3",<br>            "4",<br>            "5",<br>            "6"<br>        ]<br>    }]]></test_result>
+<notes1></notes1>
+<notes2></notes2>
+<external_link></external_link>
+<priority>2</priority>
+<requirement></requirement>
+</test_case>

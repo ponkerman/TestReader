@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<test_case>
+<id>DS_FCN_BUSCFG_02</id>
+<test_title>Get Bus Configuration, wrong session id and valid bus id</test_title>
+<test_duration>00:00</test_duration>
+<test_type>[None Selected]</test_type>
+<test_phase>[None Selected]</test_phase>
+<create_date>20151016</create_date>
+<create_time>09:22:31</create_time>
+<update_date>20151215</update_date>
+<update_time>14:03:54</update_time>
+<create_user_id>OmyotovA</create_user_id>
+<update_user_id>ShibalovA</update_user_id>
+<rec_test_configs></rec_test_configs>
+<test_resources></test_resources>
+<prerequisites></prerequisites>
+<test_description><![CDATA[1,2. Reproduce steps from test DS_FCN_BUS_04. Use wrong session id]]></test_description>
+<test_result><![CDATA[2. Receive failed response<br>Status Code: 500 Internal Error http://dsrm.tecom.nnov.ru/issues/1096]]></test_result>
+<notes1></notes1>
+<notes2></notes2>
+<external_link></external_link>
+<priority>2</priority>
+<requirement></requirement>
+</test_case>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<test_case>
+<id>DS_FCN_BUSCFG_01</id>
+<test_title>Get Bus Configuration, valid session id and bus id</test_title>
+<test_duration>00:00</test_duration>
+<test_type>[None Selected]</test_type>
+<test_phase>[None Selected]</test_phase>
+<create_date>20151016</create_date>
+<create_time>09:22:31</create_time>
+<update_date>20151215</update_date>
+<update_time>14:07:08</update_time>
+<create_user_id>OmyotovA</create_user_id>
+<update_user_id>ShibalovA</update_user_id>
+<rec_test_configs></rec_test_configs>
+<test_resources></test_resources>
+<prerequisites></prerequisites>
+<test_description><![CDATA[1.	Create session<br>2.	Send command GET /buses/(bus)/configuration?session=(session). <br><br>http://localhost:60000/test/buses/0/configuration?session=1207051392 ]]></test_description>
+<test_result><![CDATA[2.  Receive success response. <br>	Status Code: 200 OK<br>Request bus miscellaneous parameters (name, timezone etc)<br>{<br>    "name": "BUS 01  ",<br>    "alt_schedule_bus": "65535",<br>    "num_Alt_Schedule": "0",<br>    "alt_Schedule_Ndx": "0",<br>    "frame_Rate": "30",<br>    "drop_Frame": "true",<br>    "time_zone_name": "UTC",<br>    "time_zone_offset": "0"<br>}]]></test_result>
+<notes1></notes1>
+<notes2></notes2>
+<external_link></external_link>
+<priority>2</priority>
+<requirement></requirement>
+</test_case>
